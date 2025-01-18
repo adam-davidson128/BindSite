@@ -1,0 +1,59 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    17:
+HEADER 0  - Pocket Score                      : -0.1343
+HEADER 1  - Drug Score                        : 0.0011
+HEADER 2  - Number of alpha spheres           :    51
+HEADER 3  - Mean alpha-sphere radius          : 4.0170
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.5002
+HEADER 5  - Mean B-factor of pocket residues  : 0.3928
+HEADER 6  - Hydrophobicity Score              : -6.2000
+HEADER 7  - Polarity Score                    :    12
+HEADER 8  - Amino Acid based volume Score     : 4.6667
+HEADER 9  - Pocket volume (Monte Carlo)       : 668.3171
+HEADER 10 - Pocket volume (convex hull)       : 141.2215
+HEADER 11 - Charge Score                      :    -1
+HEADER 12 - Local hydrophobic density Score   : 8.0000
+HEADER 13 - Number of apolar alpha sphere     :     9
+HEADER 14 - Proportion of apolar alpha sphere : 0.1765
+ATOM    219    O GLU B 278      97.885  43.832  39.153  0.00  0.00           O 0
+ATOM    276  OE1 GLU B 285     100.172  42.286  33.436  0.73  6.43           O 0
+ATOM   1952  CE1 TYR B 501      94.688  40.057  37.897  0.00  0.00           C 0
+ATOM    252   CB GLN B 282      97.071  45.104  35.755  0.00  0.00           C 0
+ATOM   1801  OE1 GLU B 481      95.382  36.848  36.327  0.72  5.36           O 0
+ATOM   1932    O PRO B 499      93.042  40.063  33.701  0.00  0.00           O 0
+ATOM    244   CB ASN B 281     101.423  43.524  38.464  0.00  0.00           C 0
+ATOM    277  OE2 GLU B 285     102.026  41.329  32.742  0.77  9.64           O 0
+ATOM    275   CD GLU B 285     101.383  42.333  33.128  0.00  0.00           C 0
+ATOM   1950  CD1 TYR B 501      94.293  41.390  37.790  0.00  0.00           C 0
+ATOM    248    N GLN B 282      99.297  45.165  36.819  0.00  0.00           N 0
+ATOM    253   CG GLN B 282      96.380  44.511  34.515  0.00  0.00           C 0
+ATOM    255  OE1 GLN B 282      94.480  43.664  35.723  0.00  0.00           O 0
+ATOM    245   CG ASN B 281     102.380  43.205  39.607  0.00  0.00           C 0
+ATOM    246  OD1 ASN B 281     103.588  43.439  39.501  0.59  8.57           O 0
+ATOM   1925   CG LYS B 498      93.780  39.090  30.035  0.00  0.00           C 0
+ATOM   1926   CD LYS B 498      94.843  39.689  29.097  0.00  0.00           C 0
+ATOM    274   CG GLU B 285     102.095  43.674  33.219  0.00  0.00           C 0
+ATOM    223  OE1 GLU B 278      99.023  39.815  40.183  0.00  0.00           O 0
+ATOM   1935   CD PRO B 499      93.040  36.683  32.514  0.00  0.00           C 0
+ATOM    875  OE2 GLU B 363     103.404  34.259  42.317  0.00  0.00           O 0
+ATOM    215   NZ LYS B 277     103.764  40.787  43.862  0.56  7.66           N 0
+ATOM    214   CE LYS B 277     102.653  40.017  44.461  0.00  0.00           C 0
+ATOM    837  CD1 ILE B 358     105.855  35.960  45.023  0.00  0.00           C 0
+ATOM    866  CG2 VAL B 362      99.820  35.849  41.576  0.00  0.00           C 0
+ATOM    243    O ASN B 281     101.290  45.512  35.827  0.00  0.00           O 0
+ATOM    268   CB GLU B 284     103.691  47.945  35.865  0.00  0.00           C 0
+ATOM   1928   NZ LYS B 498      94.662  41.925  30.176  0.74  8.75           N 0
+ATOM    224  OE2 GLU B 278      99.200  39.215  42.299  0.00  0.00           O 0
+ATOM    247  ND2 ASN B 281     101.844  42.673  40.706  0.78  1.09           N 0
+ATOM   1751   CD LYS B 474     102.444  35.384  36.672  0.00  0.00           C 0
+ATOM    863    O VAL B 362     100.100  32.916  39.367  0.52  1.07           O 0
+ATOM   1810   CE LYS B 482      98.816  31.505  33.838  0.00  0.00           C 0
+ATOM   1802  OE2 GLU B 481      96.623  35.635  37.678  0.69  5.36           O 0
+ATOM    865  CG1 VAL B 362      97.709  36.317  40.319  0.00  0.00           C 0
+ATOM    864   CB VAL B 362      98.898  35.382  40.451  0.00  0.00           C 0
+ATOM   1811   NZ LYS B 482      98.403  32.209  32.598  0.58  6.56           N 0
+TER
+END

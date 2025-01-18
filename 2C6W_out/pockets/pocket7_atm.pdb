@@ -1,0 +1,36 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket     7:
+HEADER 0  - Pocket Score                      : 0.0252
+HEADER 1  - Drug Score                        : 0.0013
+HEADER 2  - Number of alpha spheres           :    20
+HEADER 3  - Mean alpha-sphere radius          : 3.8786
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.5918
+HEADER 5  - Mean B-factor of pocket residues  : 0.3279
+HEADER 6  - Hydrophobicity Score              : 17.5000
+HEADER 7  - Polarity Score                    :     5
+HEADER 8  - Amino Acid based volume Score     : 4.3333
+HEADER 9  - Pocket volume (Monte Carlo)       : 207.9814
+HEADER 10 - Pocket volume (convex hull)       : 4.1750
+HEADER 11 - Charge Score                      :     1
+HEADER 12 - Local hydrophobic density Score   : 7.0000
+HEADER 13 - Number of apolar alpha sphere     :     8
+HEADER 14 - Proportion of apolar alpha sphere : 0.4000
+ATOM    680   CA SER B 337      80.887  37.693  31.557  0.00  0.00           C 0
+ATOM   1874   CA ASN B 492      79.948  32.238  29.571  0.00  0.00           C 0
+ATOM   1877   CB ASN B 492      81.025  33.323  29.476  0.00  0.00           C 0
+ATOM    677  CG1 VAL B 336      81.128  33.061  32.840  0.00  0.00           C 0
+ATOM    679    N SER B 337      81.246  36.914  32.728  0.73  2.19           N 0
+ATOM   1879  OD1 ASN B 492      82.231  32.574  27.543  0.00  0.00           O 0
+ATOM   1919   OH TYR B 497      82.525  38.681  26.789  0.67  9.64           O 0
+ATOM   1876    O ASN B 492      79.464  32.503  27.246  0.00  0.00           O 0
+ATOM    682    O SER B 337      81.764  39.190  29.898  0.00  0.00           O 0
+ATOM   1916  CE1 TYR B 497      83.468  37.281  28.490  0.00  0.00           C 0
+ATOM    683   CB SER B 337      79.642  38.504  31.877  0.00  0.00           C 0
+ATOM   2640    O ARG B 589      76.367  33.598  34.421  0.45  4.29           O 0
+ATOM   1893   CB THR B 495      83.657  34.019  25.381  0.00  0.00           C 0
+ATOM   1894  OG1 THR B 495      82.947  34.105  24.137  0.56  7.50           O 0
+TER
+END
