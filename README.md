@@ -126,6 +126,12 @@ BindSite includes comprehensive error checking for:
 - Invalid pocket IDs
 - Structure parsing errors
 
+## Acknowledgments
+
+- fpocket developers for the pocket detection algorithm
+- BioPython team for the structural biology toolkit
+- Developed with assistance from Anthropic's Claude 3.5 Sonnet AI
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
