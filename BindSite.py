@@ -7,8 +7,6 @@ import pandas as pd
 from scipy import spatial
 from scipy.spatial import ConvexHull
 from scipy.linalg import eigh
-import prody
-import mdtraj as md
 
 class ProteinStructureAnalyzer:
     def __init__(self, pdb_file):
@@ -75,17 +73,25 @@ class ProteinStructureAnalyzer:
                     current_pocket = {
                         'atoms': [],
                         'score': None,
+                        'druggability_score': None,
                         'volume': None
                     }
                 elif current_pocket and line.strip():
                     # Parse pocket details
                     parts = line.strip().split()
                     if len(parts) >= 2:
-                        if "Score" in line:
+                        if "Druggability Score" in line:
                             try:
-                                current_pocket['score'] = float(parts[-1])
+                                current_pocket['druggability_score'] = float(parts[-1])
                             except ValueError:
                                 pass
+                        elif "Score" in line:
+                            try:
+                                current_pocket['score'] = float(parts[-1])
+                            
+                            except ValueError:
+                                pass
+
                         elif "Volume" in line:
                             try:
                                 current_pocket['volume'] = float(parts[-1])
@@ -105,7 +111,8 @@ class ProteinStructureAnalyzer:
         pocket = self.pockets[pocket_id]
         return {
             'volume': pocket.get('volume', None),
-            'score': pocket.get('score', None)
+            'score': pocket.get('score', None),
+            'druggability_score': pocket.get('druggability_score', None)
         }
         
     def extract_b_factors(self):
@@ -141,6 +148,19 @@ class ProteinStructureAnalyzer:
             'secondary_structure': self.analyze_secondary_structure()
         }
         return self.flexibility_data
+    
+    def find_best_pocket(self):
+        """Find pocket with highest druggability score"""
+        best_pocket_id = 0
+        best_score = float('-inf')
+        
+        for i, pocket in enumerate(self.pockets):
+            druggability = pocket.get('druggability_score')
+            if druggability is not None and druggability > best_score:
+                best_score = druggability
+                best_pocket_id = i
+                
+        return best_pocket_id
 
 class ChemicalCompatibilityAnalyzer:
     def __init__(self, protein_analyzer):
@@ -158,6 +178,7 @@ class ChemicalCompatibilityAnalyzer:
             compatibility = {
                 'pocket_volume': pocket_analysis['volume'],
                 'pocket_score': pocket_analysis['score'],
+                'druggability_score': pocket_analysis['druggability_score'],
                 'binding_site_rank': pocket_id + 1,  # Convert to 1-based indexing for display
                 'total_pockets_found': len(self.protein_analyzer.pockets)
             }
@@ -176,8 +197,8 @@ def main():
                       help='PDB file for protein structure (default: protein.pdb)')
     parser.add_argument('--ligand', type=str, default="ligand.mol2",
                       help='MOL2 file for ligand structure (default: ligand.mol2)')
-    parser.add_argument('--pocket', type=int, default=0,
-                      help='Pocket ID to analyze (default: 0)')
+    parser.add_argument('--pocket', type=int, default=None,
+                      help='Pocket ID to analyze (default: auto-select best druggability score)')
     
     args = parser.parse_args()
     
@@ -200,12 +221,18 @@ def main():
         
         if not os.path.exists(args.ligand):
             raise FileNotFoundError(f"Ligand file {args.ligand} not found")
+        
+        # Select best pocket if none specified
+        pocket_id = args.pocket if args.pocket is not None else protein_analyzer.find_best_pocket()
             
-        if args.pocket >= len(protein_analyzer.pockets):
-            raise ValueError(f"Invalid pocket ID: {args.pocket}")
+        if pocket_id >= len(protein_analyzer.pockets):
+            raise ValueError(f"Invalid pocket ID: {pocket_id}")
             
-        print(f"\nAnalyzing compatibility with ligand {args.ligand} at pocket {args.pocket}...")
-        compatibility = compatibility_analyzer.analyze_ligand_compatibility(args.ligand, args.pocket)
+        print(f"\nAnalyzing compatibility with ligand {args.ligand} at pocket {pocket_id + 1}...")
+        if args.pocket is None:
+            print(f"(Auto-selected pocket {pocket_id + 1} based on highest druggability score)")
+
+        compatibility = compatibility_analyzer.analyze_ligand_compatibility(args.ligand, pocket_id)
         print("\nCompatibility analysis results:")
         for key, value in compatibility.items():
             print(f"{key}: {value}")

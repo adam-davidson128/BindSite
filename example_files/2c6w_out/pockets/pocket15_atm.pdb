@@ -1,0 +1,37 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    15:
+HEADER 0  - Pocket Score                      : -0.0852
+HEADER 1  - Drug Score                        : 0.0006
+HEADER 2  - Number of alpha spheres           :    17
+HEADER 3  - Mean alpha-sphere radius          : 3.9587
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.5260
+HEADER 5  - Mean B-factor of pocket residues  : 0.5554
+HEADER 6  - Hydrophobicity Score              : 24.2857
+HEADER 7  - Polarity Score                    :     5
+HEADER 8  - Amino Acid based volume Score     : 4.2857
+HEADER 9  - Pocket volume (Monte Carlo)       : 219.7214
+HEADER 10 - Pocket volume (convex hull)       : 3.9204
+HEADER 11 - Charge Score                      :     1
+HEADER 12 - Local hydrophobic density Score   : 4.0000
+HEADER 13 - Number of apolar alpha sphere     :     5
+HEADER 14 - Proportion of apolar alpha sphere : 0.2941
+ATOM   1924   CB LYS B 498      92.481  38.748  29.325  0.00  0.00           C 0
+ATOM   2087    O VAL B 518      88.865  39.335  23.669  0.39  8.57           O 0
+ATOM   1927   CE LYS B 498      94.635  41.178  28.881  0.00  0.00           C 0
+ATOM   1926   CD LYS B 498      94.843  39.689  29.097  0.00  0.00           C 0
+ATOM   1905  CE2 TYR B 496      92.353  34.131  27.930  0.00  0.00           C 0
+ATOM   2100  OG1 THR B 520      90.010  35.816  22.034  0.00  0.00           O 0
+ATOM   1899    O TYR B 496      88.695  35.340  26.499  0.30  2.14           O 0
+ATOM   1903  CD2 TYR B 496      91.358  33.681  27.070  0.00  0.00           C 0
+ATOM   2077   CA ASN B 517      88.953  43.162  27.375  0.00  0.00           C 0
+ATOM   2080   CB ASN B 517      88.980  42.342  28.672  0.00  0.00           C 0
+ATOM   1943   CE MET B 500      92.124  43.456  30.022  0.00  0.00           C 0
+ATOM   2073    O SER B 516      90.492  45.428  26.842  0.33  9.64           O 0
+ATOM   1920    N LYS B 498      90.434  37.379  29.304  0.50  3.28           N 0
+ATOM   2084    N VAL B 518      88.477  41.913  25.347  0.67  6.56           N 0
+ATOM   2090  CG2 VAL B 518      89.364  42.052  22.664  0.00  0.00           C 0
+TER
+END

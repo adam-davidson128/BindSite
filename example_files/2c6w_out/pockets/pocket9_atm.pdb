@@ -1,0 +1,38 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket     9:
+HEADER 0  - Pocket Score                      : -0.0053
+HEADER 1  - Drug Score                        : 0.0001
+HEADER 2  - Number of alpha spheres           :    16
+HEADER 3  - Mean alpha-sphere radius          : 4.0426
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.7201
+HEADER 5  - Mean B-factor of pocket residues  : 0.2630
+HEADER 6  - Hydrophobicity Score              : 20.6667
+HEADER 7  - Polarity Score                    :     4
+HEADER 8  - Amino Acid based volume Score     : 4.5000
+HEADER 9  - Pocket volume (Monte Carlo)       : 220.3437
+HEADER 10 - Pocket volume (convex hull)       : 4.1599
+HEADER 11 - Charge Score                      :     1
+HEADER 12 - Local hydrophobic density Score   : 0.0000
+HEADER 13 - Number of apolar alpha sphere     :     0
+HEADER 14 - Proportion of apolar alpha sphere : 0.0000
+ATOM   2488    C ASN B 570     109.637  10.184  53.596  0.00  0.00           C 0
+ATOM   2487   CA ASN B 570     110.198   9.005  52.832  0.00  0.00           C 0
+ATOM   2489    O ASN B 570     110.319  10.730  54.458  0.00  0.00           O 0
+ATOM   2480    O GLU B 569     110.178   6.341  52.445  0.00  0.00           O 0
+ATOM   2507    O ILE B 572     104.795   8.078  55.319  0.45  5.36           O 0
+ATOM   2479    C GLU B 569     109.313   6.990  51.871  0.00  0.00           C 0
+ATOM   2486    N ASN B 570     109.219   8.302  52.011  0.00  0.00           N 0
+ATOM   2512    N LYS B 573     103.734   9.596  56.635  0.49  2.19           N 0
+ATOM   2513   CA LYS B 573     103.538   8.725  57.785  0.00  0.00           C 0
+ATOM   2516   CB LYS B 573     103.492   9.571  59.065  0.00  0.00           C 0
+ATOM   2496    C HIS B 571     106.440  11.617  54.393  0.00  0.00           C 0
+ATOM   2495   CA HIS B 571     107.880  11.775  53.960  0.00  0.00           C 0
+ATOM   2497    O HIS B 571     105.884  12.506  55.025  0.41  5.36           O 0
+ATOM   2506    C ILE B 572     104.336   9.211  55.511  0.00  0.00           C 0
+ATOM   2504    N ILE B 572     105.813  10.506  54.039  0.00  0.00           N 0
+ATOM   2472    O ILE B 568     106.004   7.498  51.957  0.43  3.21           O 0
+TER
+END
